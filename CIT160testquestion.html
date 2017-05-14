@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang='en-us'>
+<head>
+<meta charset"utf-8">
+<title>How many square feet</title>
+<script type='javaScript'>
+function computeSize(){
+var acre=document.getElementById('acres').value;
+acre=parseFloat(acre);
+var sqft=acre*43560;
+document.getElementById('sqft')innerHTML=sqft;
+}
+</script>
+</head>
+<body>
+
+<h1>How many square feet?</h1>
+Acress <input type='text' id='acres'><br>
+<button type='button' onClick='computeSize()'></button><br>
+Size (square feet) <div id='sqft'></div>
+</body>
+</html>
